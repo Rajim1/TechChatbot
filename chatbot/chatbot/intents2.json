@@ -1,0 +1,336 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Whats up","Hey","Heyy","Hy"],
+     "responses": ["Hello!", "Hi there, how can I help?"],
+     "context_set": [""]
+    },
+    
+    {"tag": "name",
+     "patterns": [" your name", "what should I call you", "Who are you","whats your name?"],
+     "responses": ["You can call me bot.", "I'm bot!", "I'm a Tech chatbot."],
+     "context_set": [""]
+    },
+
+    {"tag": "do_you_do",
+    "patterns": ["what can you do", "what do you do" ],
+    "responses": ["I can help you solve your problems related to computer hardware and software.", "I can answer your computer hardware and software related queries!"],
+    "context_set": [""]
+   },
+    
+    {"tag": "problem_solving",
+    "patterns": ["i need help","help me","tell me","problem","can you help me?"],
+    "responses": ["Yes, I can help you.", "Tell me what I can do for you.", "How can I assist you?", "What kind of help do you need?", "Please let me know how I can help you.", "Sure, go ahead and tell me your problem."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_explanation",
+    "patterns": ["What is computer hardware?", "Tell me about computer hardware", "Explain computer hardware", "What does computer hardware mean?"],
+    "responses": ["Computer hardware refers to the physical components of a computer system. It includes devices such as the processor, memory, hard drive, motherboard, graphics card, and peripherals like keyboard, mouse, and monitor."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_explanation",
+    "patterns": ["What is computer software?", "Tell me about computer software", "Explain computer software", "What does computer software mean?"],
+    "responses": ["Computer software refers to the programs and operating systems that run on a computer. It includes applications like word processors, web browsers, and multimedia players, as well as the operating system that manages and controls the computer's hardware."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_recommendation",
+    "patterns": ["Which hardware should I choose?", "Recommend computer hardware", "What hardware is best for gaming?", "Suggest computer components"],
+    "responses": ["The best computer hardware depends on your specific needs. For gaming, you'll want a powerful graphics card, a fast processor, ample memory, and a high-resolution monitor. It's best to research and compare different options based on your budget and requirements."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_recommendation",
+    "patterns": ["Which software should I use?", "Recommend computer software", "What software is best for video editing?", "Suggest software for programming"],
+    "responses": ["The recommended software depends on the task you want to accomplish. For video editing, popular options include Adobe Premiere Pro and Final Cut Pro. For programming, you can consider software like Visual Studio Code or JetBrains IntelliJ IDEA. It's important to choose software that aligns with your specific needs and preferences."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_issue",
+    "patterns": ["I'm having trouble with my computer hardware", "My hardware is not working", "How do I troubleshoot hardware issues?", "Hardware problem"],
+    "responses": ["When experiencing hardware issues, it's important to check connections, update drivers, and run diagnostics. If the issue persists, you may need to seek professional assistance or consider replacing the faulty hardware component."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_issue",
+    "patterns": ["I'm having trouble with my computer software", "My software is not working", "How do I troubleshoot software issues?", "Software problem"],
+    "responses": ["To troubleshoot software issues, you can try restarting the software, updating it to the latest version, or reinstalling it. Checking for conflicts with other software or running antivirus scans can also be helpful. If the problem persists, you can seek support from the software's developer or community."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_problem_cpu",
+    "patterns": ["My computer won't turn on", "CPU not working", "Computer not booting up", "No power to the computer"],
+    "responses": ["Check the power connections and ensure the power supply is working properly. Verify that the power button is functioning and try a different power outlet. If the problem persists, there may be an issue with the CPU, motherboard, or other hardware components. Seek professional assistance for further diagnosis and repair."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_solution_cpu",
+    "patterns": ["How do I fix a CPU overheating issue?", "CPU temperature too high", "Computer shutting down due to heat", "Cooling solution for CPU"],
+    "responses": ["Ensure that the CPU cooler is properly installed and functioning. Clean the cooling fans and vents to remove any dust buildup. Apply a high-quality thermal paste between the CPU and the heatsink. Consider upgrading to a better cooling solution if necessary. Monitor the CPU temperature using software and adjust fan speeds accordingly."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_problem_ram",
+    "patterns": ["Computer freezing or crashing", "Memory errors", "RAM not detected", "Blue screen of death"],
+    "responses": ["Reseat the RAM modules by removing and reinstalling them. Check if the RAM modules are compatible with the motherboard. Test each RAM module individually to identify faulty ones. Update the motherboard's BIOS to ensure compatibility. If the issue persists, consider replacing the faulty RAM module(s) or upgrading to higher-capacity modules."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_solution_ram",
+    "patterns": ["How do I increase the RAM capacity?", "RAM upgrade process", "Installing new RAM modules", "RAM compatibility with motherboard"],
+    "responses": ["Check the maximum supported RAM capacity of your motherboard. Purchase compatible RAM modules with the desired capacity. Ensure the computer is powered off and disconnected from the power source. Open the computer case and locate the RAM slots. Insert the new RAM modules carefully, aligning the notches. Apply gentle pressure until they click into place. Close the computer case and power on the computer to verify the new RAM is detected."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_problem_hard_drive",
+    "patterns": ["Data loss or corruption", "Slow performance", "Strange noises from hard drive", "Hard drive not recognized"],
+    "responses": ["Ensure all connections to the hard drive are secure. Run disk checks and error scans to detect and repair any file system or disk errors. Backup important data to an external storage device. Consider using data recovery software for retrieving lost data. If the hard drive continues to exhibit issues, it may be failing, and you should consider replacing it."],
+    "context_set": [""]
+    },
+    
+    {"tag": "hardware_solution_hard_drive",
+    "patterns": ["How do I format a hard drive?", "Partitioning a hard drive", "Installing a new hard drive", "Hard drive optimization"],
+    "responses": ["To format a hard drive, open Disk Management in Windows or Disk Utility on macOS. Locate the hard drive you want to format, right-click on it, and select the format option. Follow the on-screen instructions to choose the file system and complete the formatting process. Note that formatting erases all data on the hard drive, so ensure you have a backup before proceeding."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_problem_os",
+    "patterns": ["Computer startup issues", "Operating system crashes", "Blue screen of death", "System errors"],
+    "responses": ["Try starting the computer in safe mode to identify any conflicting software or driver issues. Update the operating system to the latest version and install necessary patches and updates. Run a full system scan with antivirus software to check for malware. If the problem persists, consider reinstalling the operating system or seeking technical support."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_solution_os",
+    "patterns": ["How do I reinstall the operating system?", "Operating system installation process", "Upgrading the operating system", "Troubleshooting Windows errors"],
+    "responses": ["Before reinstalling the operating system, backup important data to an external storage device. Obtain the installation media or download the operating system from the official source. Follow the on-screen instructions to boot from the installation media and initiate the installation process. Choose the desired options such as language, edition, and disk partitioning. Complete the installation by following the prompts. After installation, reinstall necessary drivers and software."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_problem_network",
+    "patterns": ["Internet connection issues", "Slow network speed", "Unable to connect to Wi-Fi", "Network adapter not working"],
+    "responses": ["Restart the modem/router and wait for it to establish a stable connection. Check if other devices can connect to the network to identify if the problem is isolated to your computer. Update network drivers to the latest version. Disable and re-enable the network adapter. Reset network settings or try using a different network connection method (e.g., Ethernet instead of Wi-Fi). If the issue persists, contact your internet service provider or seek technical assistance."],
+    "context_set": [""]
+    },
+    
+    {"tag": "software_solution_network",
+    "patterns": ["How do I set up a wireless network?", "Configuring network settings", "Network troubleshooting commands", "Network security setup"],
+    "responses": ["To set up a wireless network, ensure you have a compatible wireless router and a network adapter in your computer. Connect the wireless router to your internet modem. Access the router's administration settings via a web browser using the default IP address. Configure the network name (SSID) and security settings (WPA2 passphrase). Save the settings and connect your devices to the wireless network using the provided credentials."],
+    "context_set": [""]
+    },
+    {
+        "tag": "hardware_problem_ram",
+        "patterns": ["Computer crashes or freezes", "Memory-related errors", "Slow performance", "RAM failure signs"],
+        "responses": ["Try reseating the RAM modules, removing and reinstalling them in their slots. Test the RAM modules one at a time to identify any faulty modules. Run a memory diagnostic tool to check for errors. If errors are detected, replace the faulty RAM module(s) with compatible ones. Ensure that the RAM modules are properly matched and compatible with your motherboard."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "hardware_solution_ram",
+        "patterns": ["How do I install RAM?", "Upgrading RAM", "Choosing the right RAM", "RAM compatibility"],
+        "responses": ["Power off your computer and unplug the power cable. Open the computer case and locate the RAM slots on the motherboard. Push open the clips on either side of the RAM slot to release the existing RAM module(s). Align the notch on the new RAM module with the notch in the RAM slot and insert it at a slight angle. Press down firmly until the clips on both sides snap into place. Ensure that the RAM module is securely seated. Close the computer case, reconnect the power cable, and power on the computer. The new RAM should be recognized and utilized by the system."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "hardware_problem_overheating",
+        "patterns": ["Computer overheating", "Fan noise", "Random shutdowns", "Performance issues"],
+        "responses": ["Check if the fans are working properly and clean them from dust and debris. Ensure proper airflow within the computer case by organizing cables and removing any obstructions. Apply new thermal paste to the CPU if it is old or dried out. Consider adding additional case fans or using liquid cooling solutions for better heat dissipation. Use software utilities to monitor temperature levels and adjust fan speeds if necessary."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "hardware_solution_overheating",
+        "patterns": ["How do I clean computer fans?", "Optimizing PC airflow", "Choosing a CPU cooler", "Managing computer temperatures"],
+        "responses": ["Power off your computer and unplug the power cable. Open the computer case and locate the fans. Use compressed air or a soft brush to remove dust and debris from the fan blades, heat sinks, and vents. Be gentle to avoid damage to the components. You can also use specialized computer cleaning tools or consult professional assistance if needed. Ensure that the fans are spinning freely and are properly connected. Close the computer case and reconnect the power cable. Monitor the temperatures using software utilities and take necessary measures to improve airflow and cooling if required."],
+        "context_set": [""]
+      },
+      {
+        "tag": "hardware_problem_power_supply",
+        "patterns": ["Computer not powering on", "Random shutdowns or restarts", "Power-related issues", "Burning smell from power supply"],
+        "responses": ["Check if the power supply is properly connected to the motherboard and other components. Ensure that the power supply switch is turned on. Test the power supply with a power supply tester or replace it with a known working one. Inspect the power supply for any visible damage or bulging capacitors. If the power supply is faulty, replace it with a compatible and sufficient wattage power supply."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "hardware_solution_power_supply",
+        "patterns": ["How to install a power supply?", "Choosing the right power supply", "Power supply wattage calculation", "Modular vs. non-modular power supply"],
+        "responses": ["Power off your computer and unplug the power cable. Open the computer case and locate the power supply unit (PSU). Disconnect the power cables from the motherboard, storage drives, and other components. Remove the screws securing the power supply to the case. Slide out the old power supply and place the new one in the same position. Secure the new power supply with screws. Connect the power cables to the appropriate components. Ensure that all connections are secure. Close the computer case, reconnect the power cable, and power on the computer."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "software_problem_driver",
+        "patterns": ["Hardware not working properly", "Device manager errors", "Missing or outdated drivers", "Driver conflicts"],
+        "responses": ["Open the Device Manager and check for any devices with exclamation marks or error codes. Right-click on the problematic device and select 'Update Driver' to search for the latest driver updates. Visit the manufacturer's website and download the latest drivers for the specific hardware component. Uninstall the existing driver if necessary and reinstall the downloaded driver. Use driver update software to automatically scan and update drivers. Ensure that the installed drivers are compatible with the operating system and the hardware."],
+        "context_set": [""]
+      },
+  
+      {
+        "tag": "software_solution_driver",
+        "patterns": ["How to uninstall a driver?", "Driver update software", "Driver backup and restore", "Driver troubleshooting"],
+        "responses": ["Open the Device Manager and locate the device with the driver you want to uninstall. Right-click on the device and select 'Uninstall Device' or 'Uninstall Driver'. Follow the on-screen prompts to complete the uninstallation process. Restart your computer if prompted. You can also use specialized driver uninstaller software to remove drivers completely. Remember to create a backup of important drivers before uninstalling or updating them."],
+        "context_set": [""]
+      },
+      {
+        "tag": "data_recovery",
+        "patterns": ["How can I recover my lost data?", "Data recovery methods", "Accidentally deleted files"],
+        "responses": ["Data recovery methods depend on the cause of data loss. If you've accidentally deleted files, you can check the recycle bin or use file recovery software. If the data loss is due to hardware failure or other issues, professional data recovery services may be required. It's important to stop using the affected storage device to prevent further data loss and seek expert advice for the best recovery options."],
+        "context_set": [""]
+      },
+      {
+        "tag": "bluescreen_of_death",
+        "patterns": ["What causes the Blue Screen of Death?", "How to fix Blue Screen of Death?", "Windows BSOD error codes", "Blue Screen troubleshooting"],
+        "responses": ["The Blue Screen of Death (BSOD) is usually caused by hardware or software issues. Common causes include faulty drivers, incompatible software, hardware malfunctions, or system errors. To fix the Blue Screen of Death, you can try the following solutions:\n\n1. Update drivers: Make sure all device drivers are up to date.\n2. Check for hardware issues: Test hardware components, such as RAM or hard drive, for errors.\n3. Scan for malware: Use antivirus software to scan for malware that might be causing the issue.\n4. Remove recently installed software: Uninstall any recently installed software that might be incompatible.\n5. System Restore: Use System Restore to revert your computer to a previous stable state.\n\nPlease note that specific troubleshooting steps may vary depending on the error code displayed during the BSOD. It's recommended to note down the error code and search for more specific solutions."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["My computer keeps showing a Blue Screen of Death. What should I do?"],
+        "responses": ["If your computer frequently displays the Blue Screen of Death, it indicates an underlying issue that needs to be resolved. Try updating your device drivers, running a system scan for malware, and checking for any recently installed software that may be causing conflicts. If the problem persists, consult a professional technician for further diagnosis and repair."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["What are some common BSOD error codes in Windows?", "How can I interpret BSOD error codes?"],
+        "responses": ["BSOD error codes in Windows can vary, but some common ones include:\n\n- IRQL_NOT_LESS_OR_EQUAL: Indicates an invalid memory address or faulty driver.\n- DRIVER_POWER_STATE_FAILURE: Related to power management and device drivers.\n- PAGE_FAULT_IN_NONPAGED_AREA: Occurs when the system attempts to access non-existent or invalid memory.\n\nTo interpret BSOD error codes, it's helpful to search for the specific error code online or consult Microsoft's documentation for troubleshooting steps related to that specific code."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["I recently installed new hardware. Now I'm getting a BSOD. What could be the issue?", "How can I troubleshoot BSOD after installing new hardware?"],
+        "responses": ["When encountering a BSOD after installing new hardware, it's possible that the hardware is incompatible or not properly installed. Check if the hardware is compatible with your system and ensure that it is securely connected. Additionally, make sure you have installed the latest drivers for the new hardware. If the problem persists, try removing the hardware and see if the BSOD still occurs. If not, the hardware may be the cause, and you may need to seek further assistance or replace the hardware."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["Can faulty RAM cause a Blue Screen of Death?", "How to test if my RAM is causing a BSOD?"],
+        "responses": ["Faulty RAM can indeed cause a Blue Screen of Death. To test if your RAM is the issue, you can use Windows Memory Diagnostic tool or third-party software like Memtest86. These tools will scan your RAM for errors and provide a report. If errors are detected, it's recommended to replace the faulty RAM module to resolve the BSOD issue."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["I updated my graphics driver, and now I'm experiencing BSOD. What should I do?"],
+        "responses": ["If you recently updated your graphics driver and started experiencing BSOD, it's possible that the new driver is incompatible or faulty. You can try rolling back the driver to the previous version or reinstalling it. If the problem persists, check for any available updates for your graphics card and install them. If the issue still persists, consult the graphics card manufacturer's support or forums for further assistance."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["Is there a way to prevent the Blue Screen of Death?", "How can I minimize the risk of encountering BSOD?"],
+        "responses": ["While it's not always possible to completely prevent the Blue Screen of Death, you can minimize the risk by following some best practices. These include:\n\n- Keeping your operating system and drivers up to date.\n- Using reliable antivirus software to protect against malware.\n- Avoiding installing unauthorized or potentially incompatible software.\n- Regularly backing up your important data to prevent data loss.\n\nBy practicing these precautions and maintaining a healthy system, you can reduce the chances of encountering frequent BSOD issues."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["What should I do if my computer gets stuck in a BSOD loop?"],
+        "responses": ["If your computer gets stuck in a BSOD loop, try booting into Safe Mode. From there, you can uninstall any recently installed software or drivers that might be causing the issue. You can also use System Restore to revert your computer to a previous stable state. If these steps don't resolve the problem, it's recommended to seek professional assistance as it may indicate a more complex underlying issue."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["Can overheating cause the Blue Screen of Death?", "How to prevent BSOD due to overheating?"],
+        "responses": ["Yes, overheating can cause the Blue Screen of Death. When the system temperature exceeds safe limits, it can lead to instability and trigger BSOD. To prevent BSOD due to overheating, ensure proper airflow in your computer case, clean dust from fans and heat sinks regularly, and consider using additional cooling solutions like better CPU coolers or case fans. Monitoring software can also help you keep an eye on your system temperatures."]
+        },
+        
+        {
+        "tag": "bluescreen_of_death",
+        "patterns": ["I encountered a BSOD and it restarted my computer. How can I find more information about the error?"],
+        "responses": ["When your computer restarts after a BSOD, you can find more information about the error in the Event Viewer. Open the Event Viewer, navigate to the 'Windows Logs' section, and look for 'System' logs. Look for events with a level of 'Critical' or 'Error' around the time of the BSOD. The event details may provide additional information, such as the error code or the name of the faulty driver, which can be useful for troubleshooting or seeking further assistance."]
+        },
+        {
+          "tag": "keyboard",
+          "patterns": ["Keyboard keys are not working."],
+          "responses": ["Check for physical damage or loose connections, try a different keyboard, update keyboard drivers, or clean the keyboard."]
+        },
+        {
+          "tag": "mouse",
+          "patterns": ["Mouse cursor is not moving."],
+          "responses": ["Check for debris or dirt on the mouse sensor, replace the mouse batteries, update mouse drivers, or try a different mouse."]
+        },
+        {
+          "tag": "wifi",
+          "patterns": ["Wi-Fi network is not visible."],
+          "responses": ["Restart the router and modem, check Wi-Fi settings on the computer, update Wi-Fi drivers, or contact your ISP for assistance."]
+        },
+        {
+          "tag": "files",
+          "patterns": ["Files or folders are missing."],
+          "responses": ["Check the Recycle Bin or Trash folder, perform a system restore, use file recovery software, or restore from a backup."]
+        },
+        {
+          "tag": "usb",
+          "patterns": ["USB device is not recognized."],
+          "responses": ["Try a different USB port, update USB drivers, check for power supply issues, or test the device on another computer."]
+        },
+        {
+          "tag": "application",
+          "patterns": ["Application crashes or freezes."],
+          "responses": ["Update the application, check for system requirements, clear temporary files, reinstall the application, or seek support from the software developer."]
+        },
+        {
+          "tag": "overheating",
+          "patterns": ["Computer overheats and shuts down."],
+          "responses": ["Clean dust from fans and heat sinks, ensure proper airflow, use a laptop cooling pad or additional case fans, or replace thermal paste."]
+        },
+        {
+          "tag": "printer",
+          "patterns": ["Printer is printing blank pages."],
+          "responses": ["Check ink or toner levels, clean the print head or nozzles, update printer drivers, or replace empty cartridges."]
+        },
+        {
+          "tag": "sound",
+          "patterns": ["Sound is distorted or muffled."],
+          "responses": ["Check audio settings and cables, update sound drivers, disable audio enhancements, or test with different speakers or headphones."]
+        },
+        {
+          "tag": "restart",
+          "patterns": ["Computer restarts unexpectedly."],
+          "responses": ["Check for overheating, scan for malware infections, update device drivers, check the power supply, or perform a system restore."]
+        },
+        {
+          "tag": "install",
+          "patterns": ["Unable to install software or updates."],
+          "responses": ["Check for sufficient disk space, run the installation as an administrator, disable antivirus temporarily, or repair the Windows Update service."]
+        },
+        {
+          "tag": "battery",
+          "patterns": ["Battery doesn't charge on a laptop."],
+          "responses": ["Check the power adapter and cable, reset the battery, update battery drivers, or replace the battery if necessary."]
+        },
+        {
+          "tag": "external_hard_drive",
+          "patterns": ["External hard drive is not detected."],
+          "responses": ["Check connections and power, try a different USB cable, update USB drivers, or test the drive on another computer."]
+        },
+        {
+          "tag": "cd_dvd_drive",
+          "patterns": ["CD/DVD drive is not working."],
+          "responses": ["Check for loose connections, update or reinstall the CD/DVD drivers, clean the drive lens, or replace the drive if necessary."]
+        },
+        {
+          "tag": "webcam",
+          "patterns": ["Webcam is not working."],
+          "responses": ["Check privacy settings, update webcam drivers, test with different video conferencing software, or contact the webcam manufacturer for support."]
+        },
+        {
+          "tag": "gaming",
+          "patterns": ["Computer freezes during gaming."],
+          "responses": ["Update graphics card drivers, check for overheating, lower graphics settings, check game compatibility, or upgrade hardware if needed."]
+        },
+        {
+          "tag": "boot_device",
+          "patterns": ["Error message \"No bootable device found.\""],
+          "responses": ["Check boot device order in BIOS, ensure the operating system is installed correctly, or seek assistance from a technician."]
+        }
+        
+        
+        
+        
+        
+
+
+    
+    
+    
+]
+}
